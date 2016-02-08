@@ -1,17 +1,16 @@
-.. contents::
+virtualenv -p /usr/bin/python2.7 ZopeSkel/
+source ZopeSkel/bin/activate
 
-.. Note!
-   -----
-   Update the following URLs to point to your:
+Plone basic
 
-   - code repository
-   - bug tracker
-   - questions/comments feedback mail
-   (do not set a real mail, to avoid spams)
+Zopeskel Archetype
 
-   Or remove it if not used.
-
-- Code repository: http://svn.somewhere.com/...
-- Questions and comments to somemailing_list
-- Report bugs at http://bug.somewhere.com/..
-
+ atschema:      A handy AT schema builder
+ browserlayer:  A Plone browserlayer
+ contenttype:   A content type skeleton
+ form:          A form skeleton
+ formfield:     Schema field for a form
+ i18nlocale:    An i18n locale directory structure
+ portlet:       A Plone 3 portlet
+ view:          A browser view skeleton
+ zcmlmeta:      A ZCML meta directive skeleton
