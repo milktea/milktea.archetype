@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layers>
+    <!-- -*- extra stuff goes here -*- -->
+
+    <layer name="samplecontenttype_view"
+        interface="milktea.archetype.interfaces.samplecontenttype_viewlayer.ISampleContentType"
+    />
+</layers>
+

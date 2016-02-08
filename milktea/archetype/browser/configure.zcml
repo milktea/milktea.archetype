@@ -1,0 +1,38 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="milktea.archetype">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+      for="*"
+      name="examplebv_view"
+      class=".examplebvview.ExampleBVView"
+      template="examplebvview.pt"
+      allowed_interface=".examplebvview.IExampleBVView"
+      permission="zope.Public"
+      />
+
+
+    <!-- If you are using plone version 3.0, you will need to include the 
+         plone.browserlayer package in your buildout and uncomment the following
+         line in order to use ISampleContentType as a layer attribute -->
+    <!-- 
+    <include package="plone.browserlayer" />
+    -->
+    <!-- Example of browser component with ISampleContentType layer attribute -->
+    <!-- 
+    <browser:page
+        name="my-view"
+        for="*"
+        permission="zope.Public"
+        template="my-view.pt"
+        layer="..interfaces.ISampleContentType"
+        />
+    -->
+
+
+</configure>
